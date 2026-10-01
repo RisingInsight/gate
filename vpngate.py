@@ -51,7 +51,7 @@ VPNGATE_MIRROR = os.environ.get(
     "https://raw.githubusercontent.com/fdciabdul/Vpngate-Scraper-API/main/json/data.json",
 )
 # 已部署的 Cloudflare Worker 检测接口 (GET /check?proxyip=host:port, 实测确认)
-WORKER_CHECK_URL = os.environ.get("CHECK_WORKER", "https://check.helei.kdns.fr/check?sstp=vpn:vpn@")
+WORKER_CHECK_URL = os.environ.get("CHECK_WORKER", "https://jolly-mountain-50fc.1668676243.workers.dev/check?sstp=vpn:vpn@")
 CONCURRENCY = max(1, int(os.environ.get("CHECK_CONCURRENCY", "32")))   # 与 Worker 网页端一致的并发模型
 CHECK_TIMEOUT = float(os.environ.get("CHECK_TIMEOUT", "90"))          # 单请求客户端超时 (秒)
 MAX_CHECK_NODES = int(os.environ.get("MAX_CHECK_NODES", "0"))         # 0=不限; 本地测试可设小值
@@ -460,8 +460,14 @@ EDGE_HOSTS = [
     h.strip()
     for h in os.environ.get(
         "EDGE_HOSTS",
-        "saas.072159.xyz:443,hzytjy.cn:443,ali.nonull.pp.ua:443,auto.dolby.dpdns.org:443,"
-        "cdn.cnno.de:443,saas.sin.fan:443,cf.777791.xyz:443",
+        "www.maxcom.de:443,www.visa.com.hk:443,yd.zhuqq.qzz.io:443,101yaoye.com:443,"
+        "www.epicgames.com:443,01-qq.com:443,mogas.com:443",
+        "assets.bizclikmedia.net:443,aimagazine.com:443,de.102198.xyz:443",
+        "www.hugedomains.com:443,emos.best:443,www.ventusky.com:443",
+        "codeforces.com:443,pubs.acs.org:443,aandd.co.jp:443",
+        "tracker.metricool.com:443,dogechain.info:443,moegirl.icu:443",
+        "uspto.gov:443,jobsdb.com:443,stores.staples.com:443",
+        "gitlab.com:443,saas.sin.fan:443,bbs.alipansou.com:443",
     ).split(",")
     if h.strip()
 ]
