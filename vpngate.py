@@ -461,13 +461,13 @@ EDGE_HOSTS = [
     for h in os.environ.get(
         "EDGE_HOSTS",
         "www.maxcom.de:443,www.visa.com.hk:443,yd.zhuqq.qzz.io:443,101yaoye.com:443,"
-        "www.epicgames.com:443,01-qq.com:443,mogas.com:443",
-        "assets.bizclikmedia.net:443,aimagazine.com:443,de.102198.xyz:443",
-        "www.hugedomains.com:443,emos.best:443,www.ventusky.com:443",
-        "codeforces.com:443,pubs.acs.org:443,aandd.co.jp:443",
-        "tracker.metricool.com:443,dogechain.info:443,moegirl.icu:443",
-        "uspto.gov:443,jobsdb.com:443,stores.staples.com:443",
-        "gitlab.com:443,saas.sin.fan:443,bbs.alipansou.com:443",
+        "www.epicgames.com:443,01-qq.com:443,mogas.com:443"
+        "assets.bizclikmedia.net:443,aimagazine.com:443,de.102198.xyz:443"
+        "www.hugedomains.com:443,emos.best:443,www.ventusky.com:443"
+        "codeforces.com:443,pubs.acs.org:443,aandd.co.jp:443"
+        "tracker.metricool.com:443,dogechain.info:443,moegirl.icu:443"
+        "uspto.gov:443,jobsdb.com:443,stores.staples.com:443"
+        "gitlab.com:443,saas.sin.fan:443,bbs.alipansou.com:443"
     ).split(",")
     if h.strip()
 ]
